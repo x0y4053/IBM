@@ -13,8 +13,8 @@ $().ready(function(){
       var title = "";
       $.each(data.photos.photo, function(i,sampleImgObj){	     
 	      var urlDefault = 'https://farm' + sampleImgObj.farm + '.staticflickr.com/' + sampleImgObj.server + '/' + sampleImgObj.id + '_' + sampleImgObj.secret + '.jpg';
-var urlLarge = 'https://farm' + sampleImgObj.farm + '.staticflickr.com/' + sampleImgObj.server + '/' + sampleImgObj.id + '_' + sampleImgObj.secret + '_b.jpg';
-		  var img = '<div class="row"> \
+		  var urlLarge = 'https://farm' + sampleImgObj.farm + '.staticflickr.com/' + sampleImgObj.server + '/' + sampleImgObj.id + '_' + sampleImgObj.secret + '_b.jpg';
+		  var img = '<tr><td> <div class="row"> \
 		  				<div class="col-sm-6"><img src="' +urlDefault+'"</img></div> \
 		  				<div class="col-sm-6"> \
 		  					<div>Title:</div> \
@@ -25,13 +25,16 @@ var urlLarge = 'https://farm' + sampleImgObj.farm + '.staticflickr.com/' + sampl
 		  				    <div>' + sampleImgObj.owner +'</div> \
 		  				    <div>Server:</div> \
 		  				    <div>' + sampleImgObj.server +'</div> \
-		  				</div>';
+		  				</div></td></tr>';
 
 		 
 	      photos.push(img);
+
 	     
     });
-    $("#gallery").html(photos);
+    $("#gallery2").html(photos);
+    $('#gallery').DataTable();
+
 
   });
 });
