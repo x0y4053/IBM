@@ -1,27 +1,44 @@
 <!DOCTYPE html>
 <head>
 <title>Flickr Photo Gallery</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="http://cdn.datatables.net/1.10.10/css/jquery.dataTables.min.css">
-
+<link rel="stylesheet" type="text/css" href="animate.css">
 <link rel="stylesheet" type="text/css" href="app.css">
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="http://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 <script type="text/javascript" src="app.js"></script>
 </head>
 
 <body>
-<h1>My photo gallery</h1>
-<table id="gallery">
- <thead>
-        <tr>
-            <th></th>
-           
-        </tr>
-    </thead>
-    <tbody id="gallery2">
-    </tbody>	
-</table>
+<div class='container'>
+    <br/>
+	<div class='row'>
+		<div class='col-xs-2 col-md-1'>
+			<img src='photo-gallery.png'/>
+		</div>
+		<div id='heading' class='col-xs-10 col-md-11'>
+			<h1>My Photo Gallery</h1>
+		</div>
+	</div>
+	<br/>
+	<table id="gallery">
+	 <thead>
+	        <tr>
+	            <th></th>
+	           
+	        </tr>
+	    </thead>
+	    <tbody id="gallery2">
+	    </tbody>	
+	</table>
+</div>
 </body>
+
+<script>
+new WOW().init();
+</script>
 </html>
