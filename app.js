@@ -63,7 +63,7 @@ $().ready(function(){
      
       $.each(data.photos.photo, function(i,sampleImgObj){	     
 	      var urlDefault = 'https://farm' + sampleImgObj.farm + '.staticflickr.com/' + sampleImgObj.server + '/' + sampleImgObj.id + '_' + sampleImgObj.secret + '.jpg';
-		  if ($(window).width() > 768) {
+		  if ($(window).width() > 1200) {
 		  	//check if there is a large size
 		  	checkLargeImgExist(urlDefault,sampleImgObj);
 		  }
